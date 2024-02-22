@@ -4,6 +4,9 @@ import org.springframework.stereotype.Component;
 
 @Component("powerScore")
 public class PowerScore implements GameScore{
+    public PowerScore() {
+    }
+
     /** Calcula el puntaje de acuerdo a las letras correctas e incorrectas.
      *
      * @pre  inicia con 0 puntos.

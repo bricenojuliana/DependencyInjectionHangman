@@ -55,8 +55,10 @@ principio de inversión de dependencias:
     git add .			
     git commit -m "especificación métodos"
     ```
+    ![img.png](img.png)
 
 5. Actualice el archivo `pom.xml` e incluya las dependencias para la ultima versión de JUnit.
+    ![img_1.png](img_1.png)
 
 6. Teniendo en cuenta dichas especificaciones, en la clase donde se
    implementarán las pruebas (GameScoreTest), en los
