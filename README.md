@@ -55,10 +55,10 @@ principio de inversión de dependencias:
     git add .			
     git commit -m "especificación métodos"
     ```
-    ![img.png](img.png)
+    ![img.png](imagenes/img.png)
 
 5. Actualice el archivo `pom.xml` e incluya las dependencias para la ultima versión de JUnit.
-    ![img_1.png](img_1.png)
+    ![img_1.png](imagenes/img_1.png)
 
 6. Teniendo en cuenta dichas especificaciones, en la clase donde se
    implementarán las pruebas (GameScoreTest), en los
@@ -75,7 +75,7 @@ principio de inversión de dependencias:
     git add .			
     git commit -m "implementación pruebas"
     ```
-    ![img_2.png](img_2.png)
+    ![img_2.png](imagenes/img_2.png)
 
 9. Realice la implementación de los 'cascarones' realizados anteriormente.
    Asegúrese que todas las pruebas unitarias creadas en los puntos anteriores
@@ -87,7 +87,7 @@ principio de inversión de dependencias:
     git add .			
     git commit -m "implementación del modelo"
     ```
-    ![img_3.png](img_3.png)
+    ![img_3.png](imagenes/img_3.png)
     
 11. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
     el comando de GIT para enviar los cambios:
@@ -115,4 +115,4 @@ constructor de la clase GUI y HangmanFactoryMethod).
     * Utilizar el diccionario francés.
     * etc...
   
-![img_4.png](img_4.png)
+![img_4.png](imagenes/img_4.png)
