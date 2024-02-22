@@ -78,10 +78,10 @@ public class GameModel {
         }
         if (positions.size() == 0) {
             incorrectCount++;
-            gameScore = typeScore.calculateScore(correctCount, incorrectCount);;
         } else {
             correctCount += positions.size();
         }
+        gameScore = typeScore.calculateScore(correctCount, incorrectCount);
         return positions;
 
     }

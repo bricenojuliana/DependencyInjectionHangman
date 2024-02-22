@@ -87,7 +87,8 @@ principio de inversión de dependencias:
     git add .			
     git commit -m "implementación del modelo"
     ```
-
+    ![img_3.png](img_3.png)
+    
 11. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
     el comando de GIT para enviar los cambios:
 
@@ -113,3 +114,5 @@ constructor de la clase GUI y HangmanFactoryMethod).
     * Utilizar el idioma francés.
     * Utilizar el diccionario francés.
     * etc...
+  
+![img_4.png](img_4.png)
