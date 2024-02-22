@@ -85,7 +85,7 @@ public class GameScoreTest {
         int incorrectCount = 0;
 
         //When & Assert
-        Assert.assertThrows(IllegalArgumentException.class, () -> originalScore.calculateScore(correctCount, incorrectCount););
+        Assert.assertThrows(IllegalArgumentException.class, () -> originalScore.calculateScore(correctCount, incorrectCount));
     }
 
     @Test
@@ -96,7 +96,7 @@ public class GameScoreTest {
         int incorrectCount = -1;
 
         //When & Assert
-        Assert.assertThrows(IllegalArgumentException.class, () -> originalScore.calculateScore(correctCount, incorrectCount););
+        Assert.assertThrows(IllegalArgumentException.class, () -> originalScore.calculateScore(correctCount, incorrectCount));
     }
 
     /*
@@ -174,7 +174,7 @@ public class GameScoreTest {
         int incorrectCount = 0;
 
         //When & Assert
-        Assert.assertThrows(IllegalArgumentException.class, () -> bonusScore.calculateScore(correctCount, incorrectCount););
+        Assert.assertThrows(IllegalArgumentException.class, () -> bonusScore.calculateScore(correctCount, incorrectCount));
     }
 
     @Test
@@ -185,7 +185,7 @@ public class GameScoreTest {
         int incorrectCount = -1;
 
         //When & Assert
-        Assert.assertThrows(IllegalArgumentException.class, () -> bonusScore.calculateScore(correctCount, incorrectCount););
+        Assert.assertThrows(IllegalArgumentException.class, () -> bonusScore.calculateScore(correctCount, incorrectCount));
     }
 
     /*
@@ -263,25 +263,25 @@ public class GameScoreTest {
     }
 
     @Test
-    public void BonusScore_Should_ThrowException_When_CorrectCountLessThan0() {
+    public void PowerScore_Should_ThrowException_When_CorrectCountLessThan0() {
         //Given
         PowerScore powerScore = new PowerScore();
         int correctCount = -1;
         int incorrectCount = 0;
 
         //When & Assert
-        Assert.assertThrows(IllegalArgumentException.class, () -> powerScore.calculateScore(correctCount, incorrectCount););
+        Assert.assertThrows(IllegalArgumentException.class, () -> powerScore.calculateScore(correctCount, incorrectCount));
     }
 
     @Test
-    public void BonusScore_Should_ThrowException_When_IncorrectCountLessThan0() {
+    public void PowerScore_Should_ThrowException_When_IncorrectCountLessThan0() {
         //Given
         PowerScore powerScore = new PowerScore();
         int correctCount = 0;
         int incorrectCount = -1;
 
         //When & Assert
-        Assert.assertThrows(IllegalArgumentException.class, () -> powerScore.calculateScore(correctCount, incorrectCount););
+        Assert.assertThrows(IllegalArgumentException.class, () -> powerScore.calculateScore(correctCount, incorrectCount));
     }
 
 

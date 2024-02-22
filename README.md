@@ -75,6 +75,7 @@ principio de inversión de dependencias:
     git add .			
     git commit -m "implementación pruebas"
     ```
+    ![img_2.png](img_2.png)
 
 9. Realice la implementación de los 'cascarones' realizados anteriormente.
    Asegúrese que todas las pruebas unitarias creadas en los puntos anteriores
