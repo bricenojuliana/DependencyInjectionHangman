@@ -31,19 +31,21 @@ public class GameModel {
 
 
     private HangmanDictionary dictionary;
+    private GameScore typeScore;
 
     private Scanner scan;
     private String randomWord;
     private char[] randomWordCharArray;
 
-    public GameModel(HangmanDictionary dictionary) {
+    public GameModel(HangmanDictionary dictionary, GameScore typeScore) {
         //this.dictionary = new EnglishDictionaryDataSource();
         this.dictionary = dictionary;
+        this.typeScore = typeScore;
         randomWord = selectRandomWord();
         randomWordCharArray = randomWord.toCharArray();
         incorrectCount = 0;
         correctCount = 0;
-        gameScore = 100;
+        gameScore = typeScore.calculateScore(correctCount, incorrectCount);
 
     }
 
@@ -54,7 +56,7 @@ public class GameModel {
         randomWordCharArray = randomWord.toCharArray();
         incorrectCount = 0;
         correctCount = 0;
-        gameScore = 100;
+        gameScore = typeScore.calculateScore(correctCount, incorrectCount);;
     }
 
     //setDateTime
@@ -76,7 +78,7 @@ public class GameModel {
         }
         if (positions.size() == 0) {
             incorrectCount++;
-            gameScore -= 10;
+            gameScore = typeScore.calculateScore(correctCount, incorrectCount);;
         } else {
             correctCount += positions.size();
         }
