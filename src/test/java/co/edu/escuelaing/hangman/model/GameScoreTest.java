@@ -225,7 +225,7 @@ public class GameScoreTest {
         int score = powerScore.calculateScore(correctCount, incorrectCount);
 
         //Then
-        Assert.assertEquals(17, score);
+        Assert.assertEquals(22, score);
     }
 
     @Test

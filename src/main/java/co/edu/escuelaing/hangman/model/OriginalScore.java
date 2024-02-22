@@ -16,7 +16,14 @@ public class OriginalScore implements GameScore{
      * @return Puntaje con penalizacion de 10 puntos por cada letra incorrecta.
      */
     @Override
-    public int calculateScore(int correctCount, int incorrectCount) {
-        return 0;
+    public int calculateScore(int correctCount, int incorrectCount) throws IllegalArgumentException {
+        if (correctCount < 0 || incorrectCount < 0){
+            throw new IllegalArgumentException("Ningun contador puede ser negativo.");
+        }
+        int score = 100 - incorrectCount * 10;
+        if (score < 0){
+            return 0;
+        }
+        return score;
     }
 }
